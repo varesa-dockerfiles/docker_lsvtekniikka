@@ -22,6 +22,6 @@ RUN pip3 install --allow-external mysql-connector-python -e .
 
 ADD entrypoint_ssh.sh /entrypoint_ssh.sh
 
-CMD ['pserve', 'development_mysql.ini']
+CMD ["pserve", "development_mysql.ini"]
 
 VOLUME /tilaushallinta/

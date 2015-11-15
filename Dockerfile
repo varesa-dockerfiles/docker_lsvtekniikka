@@ -20,8 +20,8 @@ USER root
 RUN pip3 install --allow-external mysql-connector-python -e .
 
 
-# Run
-ADD entrypoint.sh /entrypoint.sh
-CMD /entrypoint.sh
+ADD entrypoint_ssh.sh /entrypoint_ssh.sh
+
+CMD ['pserve', 'development_mysql.ini']
 
 VOLUME /tilaushallinta/

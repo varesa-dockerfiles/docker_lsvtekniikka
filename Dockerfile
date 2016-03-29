@@ -40,4 +40,5 @@ RUN pip3 install -e .
 USER lsvtekniikka
 CMD ["pserve", "development_mysql.ini"]
 
-VOLUME /tilaushallinta/
+VOLUME /tilaushallinta/config
+VOLUME /tilaushallinta/extfiles

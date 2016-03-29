@@ -14,7 +14,7 @@ RUN tar xvfz mysql-connector-python-2.1.3.tar.gz
 WORKDIR /mysql-connector-python-2.1.3
 RUN pip3 install -e .
 WORKDIR /
-RUN rm -rf /mysql-connector-python-2.1.3*
+RUN rm -rf /mysql-connector-python-2.1.3.tar.gz
 
 
 # Download the app
